@@ -1,0 +1,21 @@
+body{
+    text-align: center;
+}
+textarea{
+    width: 40%;
+    resize: none;
+}
+.email{
+    width: 20%;
+}
+.subject{
+    width: 20%
+}
+p{
+    text-align: right;
+    margin-top: 5%;
+    margin-right: 5%;
+}
+span{
+    border-top: solid black 1px;
+}
