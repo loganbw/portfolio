@@ -6,15 +6,18 @@
     <link rel="stylesheet" href="asserts/css/app.css"/>
 </head>
 <body>
-<div class="header">
-    <h1>Logan Weathersby's Portfolio</h1>
+<h1>Logan Weathersby's Portfolio</h1>
+<hr/>
+<header>
+<div class="nav nav-pills center" >
+    <li><a href="/">My Projects</a></li>
+    <li><a href="/aboutMe">About Me</a></li>
+    <li><a href="/contactInfo">Contact Me</a></li>
 </div>
-<h3><a href="/aboutMe">About Me</a></h3>
-<div class="aboutMe">
-
-</div>
+</header>
 <h3>My Projects</h3>
 <p th:each="myProjects : ${myProjects}">
+<div class="allProjects">
 <div class="project">
     <a th:href="*{myProjects.link}" th:text="*{myProjects.title}"></a>
     <br/>
@@ -25,31 +28,11 @@
     <br/>
     <span th:text="*{myProjects.completed}"></span>
     </div>
+</div>
+
 </p>
-
-
-
-
-    <h3>Contact Information</h3>
-    <div class="contact">
-        <p>Please feel free to contact me at :</p>
-        <ul>
-            <li>
-                Email : <a href="/contact">loganbryantweathersby@gmail.com</a>
-            </li>
-            <li>
-                Linkedin : <a href="https://www.linkedin.com/in/logan-weathersby-87557014a/">Logan Weathersby</a>
-            </li>
-            <li>
-                GitHub : <a href="https://github.com/loganbw">Loganbw</a>
-            </li>
-            <li>
-                Twitter : <a href="https://twitter.com/loganweathersb1">loganweathersb1</a>
-            </li>
-        </ul>
-    </div>
+<hr/>
     <footer>
-
     <span>Logan Weathersby (c) 2017-2017 <a href="https://github.com/loganbw">GitHub</a> <a href="https://www.linkedin.com/in/logan-weathersby-87557014a/">LinkedIn</a>
     <a href="https://twitter.com/loganweathersb1">twitter</a>
     </span>

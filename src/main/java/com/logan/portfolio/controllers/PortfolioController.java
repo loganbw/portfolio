@@ -28,4 +28,9 @@ public class PortfolioController {
     public String aboutMe(){
         return "aboutMe";
     }
+
+    @RequestMapping("/contactInfo")
+    public String info(){
+        return "contactInfo";
+    }
 }
